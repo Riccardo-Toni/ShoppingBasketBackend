@@ -2,6 +2,7 @@
 
 apply plugin: 'java'
 apply plugin: 'application'
+apply plugin: 'build-scan'
 
 group 'CoduranceKata'
 version '1.0-SNAPSHOT'
@@ -29,6 +30,12 @@ test {
     }
 }
 
-applicationName = "todo"
+applicationName = "ShoppingBasketBackend"
 mainClassName = 'App'
+
+buildScan {
+    licenseAgreementUrl = "https://gradle.com/terms-of-service"
+    licenseAgree = "yes"
+}
+
 task stage(dependsOn: ['clean', 'installDist'])
