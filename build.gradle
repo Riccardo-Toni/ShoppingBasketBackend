@@ -2,7 +2,7 @@
 
 apply plugin: 'java'
 apply plugin: 'application'
-apply plugin: 'build-scan'
+apply plugin: 'com.gradle.build-scan'
 
 group 'CoduranceKata'
 version '1.0-SNAPSHOT'
