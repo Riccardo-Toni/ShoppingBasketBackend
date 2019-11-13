@@ -7,3 +7,8 @@ jdk: oraclejdk8
 
 script:
   - ./gradlew build --scan -s
+
+deploy:
+  provider: heroku
+  api_key:
+    secure: "d7399540-18f0-47fc-b908-d605cc9329e5"
