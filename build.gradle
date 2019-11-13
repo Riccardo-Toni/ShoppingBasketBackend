@@ -30,3 +30,6 @@ test {
         events "passed", "skipped", "failed", "standardOut", "standardError"
     }
 }
+
+task stage(dependsOn: ['build', 'clean'])
+build.mustRunAfter clean
