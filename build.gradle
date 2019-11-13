@@ -29,7 +29,7 @@ test {
     }
 }
 
-applicationName = "ShoppingBasketBackend"
+applicationName = "shoppingbasketbackend"
 mainClassName = 'App'
 
 task stage(dependsOn: ['clean', 'installDist'])
